@@ -1,1 +1,502 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | LumoConvert</title>
+  <style>
+    :root{
+      --bg-main:#0b0c14;
+      --bg-card:#141622;
+      --text-primary:#f0f2f8;
+      --text-secondary:#b8bcd0;
+      --accent:#4285ff;
+      --accent-neon:#7b61ff;
+      --border:#272a3d;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background-color:var(--bg-main);
+      color:var(--text-primary);
+      line-height:1.8;
+      padding:24px 16px;
+      max-width:860px;
+      margin:0 auto;
+    }
+    .lang-bar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      justify-content:flex-end;
+      margin-bottom:28px;
+    }
+    .lang-btn{
+      background:var(--bg-card);
+      border:1px solid var(--border);
+      color:var(--text-secondary);
+      padding:5px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:13px;
+      transition:0.2s;
+    }
+    .lang-btn.active{
+      border-color:var(--accent-neon);
+      color:#fff;
+      background:#202338;
+    }
+    .container{
+      background:var(--bg-card);
+      border-radius:14px;
+      padding:28px 32px;
+      border:1px solid var(--border);
+    }
+    h1{
+      font-size:26px;
+      margin-bottom:12px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-neon));
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    .effective-date{
+      color:var(--text-secondary);
+      font-size:14px;
+      margin-bottom:24px;
+      padding-bottom:14px;
+      border-bottom:1px solid var(--border);
+    }
+    h2{
+      font-size:18px;
+      margin:28px 0 10px;
+      color:#e2e6f5;
+    }
+    p{
+      color:var(--text-secondary);
+      margin:10px 0;
+      text-align:justify;
+    }
+    ul,ol{
+      padding-left:22px;
+      margin:10px 0;
+      color:var(--text-secondary);
+    }
+    li{
+      margin:6px 0;
+    }
+    strong{
+      color:#fff;
+    }
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    a:hover{text-decoration:underline;}
+    footer{
+      margin-top:36px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--text-secondary);
+      font-size:13px;
+      text-align:center;
+    }
+    @media(max-width:600px){
+      .container{padding:20px 16px;}
+      h1{font-size:22px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-bar" id="langBar"></div>
+  <div class="container" id="pageContent"></div>
+  <footer>LumoConvert © 2026</footer>
+
+<script>
+const i18n = {
+  "zh-Hans":{
+    title:"隐私政策",
+    effective:"生效日期：2026年09月23日",
+    content:`
+<p>本隐私政策适用于本纯本地单体工具类软件（以下简称“本软件”）。本软件主打本地运行、离线可用，无社交、无社区、无内容发布、无用户云端数据存储。我们严格遵循《中华人民共和国个人信息保护法》《网络安全法》等相关法律法规，坚持“最小必要、不上传、不泄露”原则，保护每一位用户的隐私与信息安全。</p>
+<p>下载、安装、使用本软件，即代表您已阅读、理解并同意本隐私政策全部内容。若您不同意本政策，请立即停止使用并卸载本软件。</p>
+<h2>一、数据收集原则</h2>
+<p>本软件为纯本地离线工具，核心功能完全在用户设备本地运行。本软件默认不联网、不上传、不收集、不备份用户任何个人隐私数据、文件数据、使用记录。所有用户数据仅保存在用户个人设备本地。</p>
+<h2>二、软件存储与数据归属</h2>
+<ol>
+<li>本软件产生的所有配置信息、操作记录、生成文件、缓存内容均仅存储于用户本地设备，不会自动上传至任何服务器。</li>
+<li>用户本地数据的所有权、保管权完全归用户所有，我方不持有、不备份、不访问用户本地数据。</li>
+<li>卸载软件、更换设备、系统重装、设备故障或手动清理缓存导致的数据丢失，由用户自行承担，我方无法恢复数据。</li>
+</ol>
+<h2>三、仅在可选联网场景的少量信息（无隐私）</h2>
+<p>本软件绝大多数功能无需联网，仅在用户主动触发以下行为时，产生极简网络请求，且不收集个人身份信息：</p>
+<ol>
+<li>版本更新检测：仅请求版本接口，用于判断是否存在新版本，无用户标识、无设备追踪、无行为记录。</li>
+<li>授权校验：仅进行本地授权校验或匿名合规校验，不会上传用户隐私、设备信息、使用内容。</li>
+</ol>
+<p>以上请求均为匿名、无关联、无追踪的基础网络请求，不会用于用户画像、行为分析、广告推送。</p>
+<h2>四、不会收集与使用的信息</h2>
+<p>我方明确承诺：本软件绝不收集以下任何用户信息：</p>
+<ol>
+<li>手机号、身份证、姓名、住址等个人身份信息；</li>
+<li>通讯录、相册、定位、麦克风、摄像头等隐私权限信息；</li>
+<li>用户设备文件、文档、素材、生成内容、处理内容；</li>
+<li>用户浏览记录、使用轨迹、行为数据；</li>
+<li>任何可用于定位、识别具体用户的敏感信息。</li>
+</ol>
+<h2>五、信息共享与披露</h2>
+<ol>
+<li>因本软件几乎不收集用户数据，故不存在任何用户信息对外共享、出售、披露的情况。</li>
+<li>我方不会向第三方公司、机构、个人转让、售卖、出租用户任何信息。</li>
+<li>仅在法律法规、司法机关、监管部门依法要求的情况下，我方将依规配合提供相关必要信息。</li>
+</ol>
+<h2>六、第三方服务</h2>
+<p>本软件无内置第三方统计、广告、追踪、埋点服务，无第三方数据收集模块。</p>
+<h2>七、未成年人隐私保护</h2>
+<p>本软件为通用安全工具，无不良内容、无社交互动、无信息采集。未成年人可在监护人监督下使用，我方不会主动收集未成年人任何隐私信息。</p>
+<h2>八、用户权利</h2>
+<p>因本软件不收集、不存储用户云端数据，用户天然享有完整的数据所有权与控制权：用户可随时在本地删除、清空、卸载软件及对应数据，无需向我方申请。</p>
+<h2>九、政策更新</h2>
+<p>我方有权根据法律法规更新本隐私政策，更新后将在软件公示页面生效，用户继续使用软件即视为接受更新后政策。</p>
+<h2>十、联系我们</h2>
+<p>如您对本隐私政策有任何疑问、意见或建议，可发送邮件至 <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>。</p>
+`
+  },
+  "zh-Hant":{
+    title:"隱私政策",
+    effective:"生效日期：2026年09月23日",
+    content:`
+<p>本隱私政策適用於本純本機獨立工具軟體（以下簡稱「本軟體」）。本軟體主打本機執行、離線可用，無社交、無社群、無內容發布、無使用者雲端資料儲存。我們嚴格遵循相關法律法規，堅持「最小必要、不上傳、不洩露」原則，保護每位使用者的隱私與資訊安全。</p>
+<p>下載、安裝、使用本軟體，即代表您已閱讀、理解並同意本隱私政策全部內容。若您不同意本政策，請立即停止使用並解除安裝本軟體。</p>
+<h2>一、資料蒐集原則</h2>
+<p>本軟體為純本機離線工具，核心功能完全在使用者裝置本機執行。本軟體預設不聯網、不上傳、不蒐集、不備份使用者任何個人隱私資料、檔案資料、使用紀錄。所有使用者資料僅儲存於使用者個人裝置本機。</p>
+<h2>二、軟體儲存與資料歸屬</h2>
+<ol>
+<li>本軟體產生的所有設定資訊、操作紀錄、產生檔案、快取內容均僅儲存於使用者本機裝置，不會自動上傳至任何伺服器。</li>
+<li>使用者本機資料的所有權、保管權完全歸使用者所有，我方不持有、不備份、不存取使用者本機資料。</li>
+<li>解除安裝軟體、更換裝置、系統重裝、裝置故障或手動清除快取導致的資料遺失，由使用者自行承擔，我方無法復原資料。</li>
+</ol>
+<h2>三、僅可選聯網場景的少量資訊（無隱私）</h2>
+<p>本軟體絕大多數功能無需聯網，僅在使用者主動觸發以下行為時，產生簡單網路請求，且不蒐集個人身份資訊：</p>
+<ol>
+<li>版本更新檢測：僅請求版本介面，判斷是否有新版本，無使用者標示、無裝置追蹤、無行為紀錄。</li>
+<li>授權驗證：僅執行本機授權驗證或匿名合規驗證，不會上傳使用者隱私、裝置資訊、使用內容。</li>
+</ol>
+<p>以上請求皆為匿名、無關聯、無追蹤的基礎網路請求，不會用於使用者畫像、行為分析、廣告推送。</p>
+<h2>四、不會蒐集與使用的資訊</h2>
+<p>我方明確承諾：本軟體絕不蒐集以下任何使用者資訊：</p>
+<ol>
+<li>手機號碼、身分證、姓名、住址等個人身份資訊；</li>
+<li>聯絡人、相簿、定位、麥克風、相機等隱私權限資訊；</li>
+<li>使用者裝置檔案、文件、素材、產生內容、處理內容；</li>
+<li>使用者瀏覽紀錄、使用軌跡、行為資料；</li>
+<li>任何可用於定位、識別特定使用者的敏感資訊。</li>
+</ol>
+<h2>五、資訊共享與揭露</h2>
+<ol>
+<li>因本軟體幾乎不蒐集使用者資料，故沒有使用者資訊對外共享、販售、揭露之情況。</li>
+<li>我方不會向第三方公司、機構、個人轉讓、販賣、出租使用者任何資訊。</li>
+<li>僅在法律法規、司法機關、監管部門依法要求之情況下，我方將依規定配合提供必要資訊。</li>
+</ol>
+<h2>六、第三方服務</h2>
+<p>本軟體沒有內建第三方統計、廣告、追蹤、埋點服務，無第三方資料蒐集模組。</p>
+<h2>七、未成年人隱私保護</h2>
+<p>本軟體為通用安全工具，無不良內容、無社交互動、無資訊蒐集。未成年人可於監護人監督下使用，我方不會主動蒐集未成年人任何隱私資訊。</p>
+<h2>八、使用者權利</h2>
+<p>因為本軟體不蒐集、不儲存使用者雲端資料，使用者天然擁有完整的資料所有權與控制權：您可隨時在本機刪除、清空、解除安裝軟體及對應資料，無需向我方提出申請。</p>
+<h2>九、政策更新</h2>
+<p>我方有權依據法律法規更新本隱私政策，更新後將於軟體公示頁面生效，您繼續使用軟體即視為接受更新後政策。</p>
+<h2>十、聯絡我們</h2>
+<p>如您對本隱私政策有任何疑問、意見或建議，歡迎寄信至 <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>。</p>
+`
+  },
+  "en-US":{
+    title:"Privacy Policy",
+    effective:"Effective Date: September 23, 2026",
+    content:`
+<p>This Privacy Policy applies to LumoConvert (the “Software”). The Software runs locally on‑device and works offline. There are no social features, communities, content publishing or cloud‑storage for user data. We respect user privacy and follow applicable data‑protection laws. By downloading, installing or using this Software, you acknowledge that you have read, understood and agree to this Privacy Policy. If you disagree, please stop using and uninstall the Software immediately.</p>
+<h2>1. Data Collection Principles</h2>
+<p>This is a local‑first offline tool. Core functions run entirely on your device. By default the Software does not connect to the internet, upload, collect or back‑up your personal private data, files or usage records. All user data stays locally on your device.</p>
+<h2>2. Local Storage and Ownership</h2>
+<ol>
+<li>All configurations, operation logs, generated files and caches are stored only on your local device. Nothing is automatically sent to any remote server.</li>
+<li>You fully own and are responsible for your local data. We do not possess, back‑up or access your local files.</li>
+<li>Data loss caused by uninstallation, device replacement, system reinstall, device failure or manual cache clearing is your responsibility. We cannot recover lost data.</li>
+</ol>
+<h2>3. Limited Optional Network Requests (No private data)</h2>
+<p>Most features work fully offline. Network requests are only triggered by your explicit actions, without collecting personal identifiers:</p>
+<ol>
+<li>Version‑check: request version information only; no user‑ID, device‑tracking or activity logging.</li>
+<li>License validation: local or anonymous authorization check only; no upload of private information, device details or user content.</li>
+</ol>
+<p>These are anonymous unlinked requests. They are not used for user profiling, behavioural analytics or advertising.</p>
+<h2>4. Information we DO NOT collect</h2>
+<p>We explicitly commit that we never collect:</p>
+<ol>
+<li>Personal identifiers: phone number, ID‑number, real‑name, residential address;</li>
+<li>Permission‑related data: contacts, photos, location, microphone, camera feed;</li>
+<li>Your documents, media assets, generated outputs or processed files;</li>
+<li>Browsing history, usage trails and behavioural metrics;</li>
+<li>Any other sensitive information that can identify an individual user.</li>
+</ol>
+<h2>5. Sharing and Disclosure</h2>
+<ol>
+<li>Since almost no user‑data is collected, there is no sharing, selling or disclosure of your personal information.</li>
+<li>We will not transfer, sell or rent your information to any third‑party companies, organisations or individuals.</li>
+<li>We may cooperate and provide required information only when legally requested by courts or regulatory authorities.</li>
+</ol>
+<h2>6. Third‑Party Services</h2>
+<p>The Software contains no built‑in third‑party analytics, advertising, tracking or event‑tracking SDKs.</p>
+<h2>7. Minors Privacy</h2>
+<p>This is a general‑purpose safe utility with no social interaction and no data harvesting. Minors should use it under guardian supervision. We do not intentionally collect any minor‑related private data.</p>
+<h2>8. Your Rights</h2>
+<p>We store zero user‑data on cloud servers. You retain full ownership and control over your data: you may delete local content or uninstall the app anytime without submitting a request to us.</p>
+<h2>9. Policy Revisions</h2>
+<p>We may revise this Privacy Policy in accordance with applicable laws. Revised policy becomes effective once published. Continued use of the Software constitutes acceptance of the updated terms.</p>
+<h2>10. Contact Us</h2>
+<p>If you have questions regarding this Privacy Policy please email us at <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>.</p>
+`
+  },
+  "ja":{
+    title:"プライバシーポリシー",
+    effective:"発効日：2026年09月23日",
+    content:`
+<p>本プライバシーポリシーはローカル動作型アプリ LumoConvert（以下「本ソフトウェア」）に適用されます。本ソフトは端末内で動作しオフライン利用が可能で、SNS機能、コミュニティ、コンテンツ投稿、ユーザーデータのクラウド保存はありません。適用される法令を遵守しプライバシーを保護します。本ソフトをダウンロード・インストール・使用することで、本ポリシーに同意したものとみなされます。同意いただけない場合は直ちに使用を中止しアンインストールしてください。</p>
+<h2>1. データ収集の原則</h2>
+<p>本ソフトはローカルオフラインツールであり、主要機能はすべてお使いの端末上で実行されます。既定ではネットワーク接続を行わず、個人データ、ファイル、利用履歴を収集・アップロード・バックアップしません。すべてのユーザーデータは端末内にのみ保存されます。</p>
+<h2>2. ローカル保存とデータの所有権</h2>
+<ol>
+<li>設定、操作履歴、生成ファイル、キャッシュはすべて端末に保存され、自動的に外部サーバーへ送信されることはありません。</li>
+<li>ローカルデータの所有権はすべてユーザーにあります。当社はデータを保持・バックアップ・参照しません。</li>
+<li>アンインストール、機種変更、OS再インストール、端末故障、手動キャッシュ削除によるデータ消失について当社は責任を負いません。データ復旧はできません。</li>
+</ol>
+<h2>3. 任意のネットワーク通信（プライバシーデータは送信されません）</h2>
+<p>大半の機能はオフラインで動作します。ネットワークリクエストはユーザーが明示的に操作した場合のみ実行され、個人を特定する情報は送信されません。</p>
+<ol>
+<li>バージョン確認：バージョン情報取得のみ。ユーザーID、端末追跡、行動ログは送信しません。</li>
+<li>ライセンス認証：ローカルまたは匿名での認証のみ。プライバシー情報、端末情報、ユーザーコンテンツをアップロードしません。</li>
+</ol>
+<p>これらの通信は匿名で紐付けされておらず、ユーザープロファイリング、行動分析、広告目的には使用されません。</p>
+<h2>4. 収集しない情報</h2>
+<p>当社は以下の情報を一切収集しないことを明言します。</p>
+<ol>
+<li>電話番号、身分証番号、氏名、住所など個人を特定する情報</li>
+<li>連絡先、写真、位置情報、マイク、カメラといった権限関連情報</li>
+<li>端末内の文書、画像、動画、生成・加工したファイル</li>
+<li>閲覧履歴、利用行動、操作ログ</li>
+<li>個人を識別可能なその他の機密情報</li>
+</ol>
+<h2>5. 情報の共有と開示</h2>
+<ol>
+<li>ユーザーデータをほとんど収集しないため、情報の第三者への共有・販売・開示は行いません。</li>
+<li>第三者企業・団体・個人に対しユーザー情報を譲渡、販売、貸与いたしません。</li>
+<li>裁判所や監督官庁から法的要請があった場合に限り、法令に基づき必要な情報を提供する場合があります。</li>
+</ol>
+<h2>6. 第三者サービス</h2>
+<p>本ソフトには第三者の分析、広告、トラッキングSDKは内蔵されておりません。</p>
+<h2>7. 未成年者のプライバシー</h2>
+<p>本アプリは汎用ユーティリティでありソーシャル機能やデータ収集はありません。未成年者は保護者の監督のもと使用してください。未成年者のプライバシーデータを意図的に収集することはありません。</p>
+<h2>8. ユーザーの権利</h2>
+<p>クラウド上にユーザーデータを保管していないため、ユーザーはデータに対する完全な所有権と管理権を持ちます。いつでもローカルデータを削除またはアンインストール可能で、当社へ申請する必要はありません。</p>
+<h2>9. ポリシーの改定</h2>
+<p>法令に従い本プライバシーポリシーを改定する場合があります。改定後のポリシーは公開時点より効力を生じ、引き続き使用することで改定内容に同意したものとみなされます。</p>
+<h2>10. お問い合わせ</h2>
+<p>プライバシーポリシーに関するご質問はメール <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a> までお送りください。</p>
+`
+  },
+  "ko":{
+    title:"개인정보 처리방침",
+    effective:"시행일: 2026년 09월 23일",
+    content:`
+<p>본 개인정보 처리방침은 로컬 실행 앱 LumoConvert(이하 “소프트웨어”)에 적용됩니다. 본 소프트웨어는 기기 내에서 작동하며 오프라인 사용이 가능하고 소셜 기능, 커뮤니티, 콘텐츠 게시, 사용자 데이터 클라우드 저장 기능이 없습니다. 관련 법규를 준수하여 사용자 프라이버시를 보호합니다. 소프트웨어를 다운로드·설치·사용함으로써 본 방침에 동의하는 것으로 간주됩니다. 동의하지 않으시면 즉시 사용을 중단하고 앱을 제거하십시오.</p>
+<h2>1. 데이터 수집 원칙</h2>
+<p>본 소프트웨어는 로컬 오프라인 도구로 핵심 기능이 전적으로 사용자 기기 내에서 실행됩니다. 기본적으로 인터넷에 연결하지 않으며 개인정보, 파일 데이터, 사용 기록을 수집·업로드·백업하지 않습니다. 모든 사용자 데이터는 오직 기기 로컬에 저장됩니다.</p>
+<h2>2. 로컬 저장 및 데이터 소유권</h2>
+<ol>
+<li>설정 정보, 작업 기록, 생성 파일, 캐시 데이터는 모두 사용자 기기에만 저장되며 자동으로 외부 서버에 전송되지 않습니다.</li>
+<li>로컬 데이터의 소유권은 전적으로 사용자에게 있습니다. 당사는 사용자 데이터를 보유하거나 백업하거나 접근하지 않습니다.</li>
+<li>앱 삭제, 기기 교체, 시스템 재설치, 기기 고장, 수동 캐시 삭제로 인한 데이터 손실은 사용자 책임이며 당사는 데이터 복구를 지원하지 않습니다.</li>
+</ol>
+<h2>3. 선택적 네트워크 요청(개인정보 미전송)</h2>
+<p>대부분 기능은 오프라인으로 동작합니다. 네트워크 요청은 사용자가 명시적으로 동작을 실행했을 때만 발생하며 개인 식별 정보를 수집하지 않습니다.</p>
+<ol>
+<li>버전 확인: 버전 정보 조회만 수행하며 사용자 ID, 기기 추적, 사용 기록을 보내지 않습니다.</li>
+<li>라이선스 검증: 로컬 또는 익명 인증만 수행하며 개인정보, 기기 정보, 사용자 콘텐츠를 업로드하지 않습니다.</li>
+</ol>
+<p>해당 요청은 익명으로 연관되지 않으며 사용자 프로파일링, 행위 분석, 광고 목적으로 사용되지 않습니다.</p>
+<h2>4. 수집하지 않는 정보</h2>
+<p>당사는 다음 정보를 절대 수집하지 않음을 명확히 약속합니다.</p>
+<ol>
+<li>전화번호, 신분증 번호, 이름, 주소 등 개인 식별 정보</li>
+<li>연락처, 사진, 위치, 마이크, 카메라 등 권한 관련 데이터</li>
+<li>기기 내 문서, 미디어 자료, 생성·가공한 파일</li>
+<li>탐색 기록, 사용 행적, 행위 데이터</li>
+<li>개인을 식별할 수 있는 기타 민감 정보</li>
+</ol>
+<h2>5. 정보 공유 및 공개</h2>
+<ol>
+<li>사용자 데이터를 거의 수집하지 않으므로 제3자에게 정보를 공유·판매·공개하지 않습니다.</li>
+<li>제3자 회사, 기관, 개인에게 사용자 정보를 양도, 판매, 임대하지 않습니다.</li>
+<li>법원 또는 규제 기관의 합법적 요청이 있을 경우 관련 법률에 따라 필요한 정보를 제공할 수 있습니다.</li>
+</ol>
+<h2>6. 제3자 서비스</h2>
+<p>본 소프트웨어에는 제3자 분석, 광고, 추적 SDK가 내장되어 있지 않습니다.</p>
+<h2>7. 미성년자 프라이버시</h2>
+<p>본 앱은 범용 유틸리티 앱으로 소셜 상호작용과 데이터 수집 기능이 없습니다. 미성년자는 보호자 감독 하에 사용해야 합니다. 미성년자의 개인정보를 의도적으로 수집하지 않습니다.</p>
+<h2>8. 사용자 권리</h2>
+<p>클라우드 서버에 사용자 데이터를 저장하지 않으므로 사용자는 데이터에 대한 완전한 소유권과 통제권을 가집니다. 언제든 로컬 데이터를 삭제하거나 앱을 제거할 수 있으며 당사에 별도 요청할 필요가 없습니다.</p>
+<h2>9. 정책 개정</h2>
+<p>관련 법률에 따라 본 개인정보 처리방침을 개정할 수 있습니다. 개정된 정책은 게시 시점부터 효력이 발생하며 소프트웨어를 계속 사용하는 것은 개정 정책에 동의하는 것으로 간주됩니다.</p>
+<h2>10. 문의하기</h2>
+<p>본 개인정보 처리방침에 대한 문의는 이메일 <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>로 보내주십시오.</p>
+`
+  },
+  "de-DE":{
+    title:"Datenschutzerklärung",
+    effective:"Gültig ab: 23. September 2026",
+    content:`
+<p>Diese Datenschutzerklärung gilt für die lokale Anwendung LumoConvert (im Folgenden „Software“). Die Software arbeitet gerätelokal und offline‑fähig. Es gibt keine sozialen Funktionen, Communities, Inhaltsveröffentlichungen oder Cloud‑Speicherung von Nutzerdaten. Wir halten uns an geltende Datenschutzgesetze. Mit Herunterladen, Installation oder Nutzung der Software bestätigen Sie, dass Sie diese Erklärung gelesen und akzeptiert haben. Falls Sie nicht zustimmen, beenden Sie bitte umgehend die Nutzung und deinstallieren Sie die Software.</p>
+<h2>1. Grundsätze der Datenerhebung</h2>
+<p>Dies ist ein lokales Offline‑Werkzeug. Alle Kernfunktionen laufen vollständig auf Ihrem Endgerät. Standardmäßig stellt die Software keine Internetverbindung her; sie erhebt, lädt hoch oder sichert keine personenbezogenen Daten, Dateien oder Nutzungsverläufe. Alle Nutzerdaten verbleiben lokal auf Ihrem Gerät.</p>
+<h2>2. Lokale Speicherung und Eigentumsrecht</h2>
+<ol>
+<li>Alle Einstellungen, Protokolle, generierten Dateien und Cache‑Inhalte werden nur lokal gespeichert. Es erfolgt kein automatischer Versand an externe Server.</li>
+<li>Sie behalten das vollständige Eigentum und die Verantwortung für Ihre lokalen Daten. Wir besitzen, sichern oder greifen nicht auf Ihre lokalen Dateien zu.</li>
+<li>Datenverlust durch Deinstallation, Gerätewechsel, System‑Neuinstallation, Gerätefehler oder manuelles Löschen des Caches liegt in Ihrer Verantwortung. Wir können keine Daten wiederherstellen.</li>
+</ol>
+<h2>3. Begrenzte optionale Netzwerkanfragen (keine privaten Daten)</h2>
+<p>Die meisten Funktionen arbeiten vollständig offline. Netzwerkanfragen werden nur durch Ihre ausdrückliche Aktion ausgelöst, ohne personenbezogene Kennungen zu sammeln.</p>
+<ol>
+<li>Versionsprüfung: Nur Abfrage von Versionsinformationen; keine Benutzer‑ID, Geräte‑Tracking oder Aktivitätsprotokolle.</li>
+<li>Lizenzprüfung: Nur lokale oder anonyme Authentifizierung; kein Hochladen von privaten Daten, Gerätedetails oder Nutzerinhalten.</li>
+</ol>
+<p>Diese Anfragen sind anonym und unverknüpft. Sie werden nicht für Nutzerprofile, Verhaltensanalyse oder Werbezwecke verwendet.</p>
+<h2>4. Daten, die wir NICHT erheben</h2>
+<p>Wir verpflichten uns ausdrücklich, niemals folgende Informationen zu sammeln:</p>
+<ol>
+<li>Personenbezogene Kennungen: Telefonnummer, Ausweisnummer, Name, Wohnadresse;</li>
+<li>Berechtigungsdaten: Kontakte, Fotos, Standort, Mikrofon‑ oder Kamerazugriff;</li>
+<li>Ihre Dokumente, Mediendateien, generierte oder verarbeitete Inhalte;</li>
+<li>Browser‑ und Nutzungsverläufe, Verhaltensmetriken;</li>
+<li>Alle weiteren sensiblen Informationen zur Identifizierung einer Person.</li>
+</ol>
+<h2>5. Weitergabe und Offenlegung von Daten</h2>
+<ol>
+<li>Da fast keine Nutzerdaten erhoben werden, findet keine Weitergabe, Verkauf oder Offenlegung personenbezogener Daten statt.</li>
+<li>Wir geben Ihre Daten nicht an Dritte weiter, verkaufen oder vermieten sie nicht an Unternehmen, Organisationen oder Personen.</li>
+<li>Nur bei rechtmäßiger Anfrage durch Gerichte oder Aufsichtsbehörden können wir erforderliche Informationen im Rahmen gesetzlicher Pflichten zur Verfügung stellen.</li>
+</ol>
+<h2>6. Dienste von Drittanbietern</h2>
+<p>Die Software enthält keine integrierten Dritt‑SDKs für Analytik, Werbung oder Nutzerverfolgung.</p>
+<h2>7. Datenschutz von Minderjährigen</h2>
+<p>Dies ist ein allgemeines sicheres Dienstprogramm ohne soziale Interaktion und ohne Datenerfassung. Minderjährige sollten die Anwendung unter Aufsicht eines Erziehungsberechtigten nutzen. Wir erfassen absichtlich keine personenbezogenen Daten von Minderjährigen.</p>
+<h2>8. Ihre Rechte</h2>
+<p>Wir speichern keine Nutzerdaten auf Cloud‑Servern. Sie behalten vollständiges Eigentum und Kontrolle über Ihre Daten: Sie können lokale Inhalte jederzeit löschen oder die App deinstallieren, ohne eine Anfrage an uns zu stellen.</p>
+<h2>9. Änderungen dieser Erklärung</h2>
+<p>Wir können diese Datenschutzerklärung nach geltendem Recht überarbeiten. Die überarbeitete Fassung tritt mit der Veröffentlichung in Kraft. Die fortgesetzte Nutzung der Software gilt als Akzeptanz der aktualisierten Bedingungen.</p>
+<h2>10. Kontakt</h2>
+<p>Bei Fragen zu dieser Datenschutzerklärung schreiben Sie bitte eine E‑Mail an <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>.</p>
+`
+  },
+  "fr-FR":{
+    title:"Politique de confidentialité",
+    effective:"Date d’entrée en vigueur : 23 septembre 2026",
+    content:`
+<p>Cette Politique de confidentialité s’applique à l’application locale LumoConvert (ci‑après le « Logiciel »). Le logiciel s’exécute sur votre appareil et fonctionne hors‑ligne. Il n’inclut pas de fonctionnalités sociales, de communautés, de publication de contenus ni de stockage cloud des données utilisateur. Nous respectons les lois applicables sur la protection des données. En téléchargeant, installant ou utilisant ce logiciel, vous reconnaissez avoir lu et accepté cette politique. Si vous n’êtes pas d’accord, cessez immédiatement l’utilisation et désinstallez‑le.</p>
+<h2>1. Principes de collecte des données</h2>
+<p>C’est un outil local hors‑ligne. Ses fonctions principales s’exécutent entièrement sur votre appareil. Par défaut, le logiciel ne se connecte pas à Internet ; il ne collecte, ne téléverse ni ne sauvegarde aucune donnée privée, fichier ou historique d’usage. Toutes les données restent stockées localement sur votre appareil.</p>
+<h2>2. Stockage local et propriété des données</h2>
+<ol>
+<li>Tous les paramètres, journaux d’opérations, fichiers générés et contenus mis en cache sont stockés uniquement sur votre appareil, sans envoi automatique vers des serveurs distants.</li>
+<li>Vous détenez la pleine propriété et la responsabilité de vos données locales. Nous ne détenons, ne sauvegardons ni n’accédons à vos fichiers locaux.</li>
+<li>La perte de données provoquée par une désinstallation, un changement d’appareil, une réinstallation système, une panne ou une suppression manuelle du cache relève de votre responsabilité. Nous ne pouvons pas récupérer de données perdues.</li>
+</ol>
+<h2>3. Requêtes réseau limitées et optionnelles (aucune donnée privée)</h2>
+<p>La plupart des fonctionnalités fonctionnent entièrement hors‑ligne. Des requêtes réseau ne sont déclenchées que par vos actions explicites, sans collecter d’identifiants personnels.</p>
+<ol>
+<li>Vérification de version : récupération seule des informations de version ; pas d’ID utilisateur, pas de suivi d’appareil, pas de journalisation des activités.</li>
+<li>Validation de licence : vérification d’autorisation locale ou anonyme uniquement ; pas de téléversement de données privées, détails de l’appareil ou contenus utilisateur.</li>
+</ol>
+<p>Ces requêtes sont anonymes et non liées. Elles ne sont pas utilisées pour le profilage utilisateur, l’analyse comportementale ou la publicité.</p>
+<h2>4. Informations que nous NE collectons PAS</h2>
+<p>Nous nous engageons explicitement à ne jamais collecter :</p>
+<ol>
+<li>Identifiants personnels : numéro de téléphone, pièce d’identité, nom réel, adresse résidentielle ;</li>
+<li>Données liées aux permissions : contacts, photos, géolocalisation, flux micro ou caméra ;</li>
+<li>Vos documents, ressources multimédias, sorties générées ou fichiers traités ;</li>
+<li>Historique de navigation, traces d’usage et métriques comportementales ;</li>
+<li>Toute autre information sensible permettant d’identifier un utilisateur.</li>
+</ol>
+<h2>5. Partage et divulgation des informations</h2>
+<ol>
+<li>Comme quasiment aucune donnée utilisateur n’est collectée, il n’y a aucun partage, vente ou divulgation de vos informations personnelles.</li>
+<li>Nous ne transmettons, ne vendons ni ne louons vos informations à aucune entreprise, organisation ou personne tierce.</li>
+<li>Nous pouvons fournir les informations requises uniquement sur demande légale des tribunaux ou autorités de contrôle.</li>
+</ol>
+<h2>6. Services tiers</h2>
+<p>Le logiciel ne contient aucun SDK tiers intégré pour l’analyse, la publicité ou le suivi d’utilisateur.</p>
+<h2>7. Confidentialité des mineurs</h2>
+<p>Il s’agit d’un utilitaire général sûr, sans interaction sociale ni collecte de données. Les mineurs doivent l’utiliser sous la surveillance d’un tuteur légal. Nous ne collectons pas intentionnellement de données privées relatives aux mineurs.</p>
+<h2>8. Vos droits</h2>
+<p>Nous ne stockons aucune donnée utilisateur sur des serveurs cloud. Vous conservez la pleine propriété et le contrôle de vos données : vous pouvez supprimer vos contenus locaux ou désinstaller l’application à tout moment sans nous adresser de demande.</p>
+<h2>9. Révisions de la politique</h2>
+<p>Nous pouvons réviser cette Politique de confidentialité conformément aux lois applicables. La version révisée prend effet dès sa publication. La poursuite de l’utilisation du logiciel vaut acceptation des conditions mises à jour.</p>
+<h2>10. Nous contacter</h2>
+<p>Pour toute question sur cette politique de confidentialité, veuillez‑nous écrire à : <a href="mailto:support@lumoconvert.app">support@lumoconvert.app</a>.</p>
+`
+  }
+};
+
+const langList = [
+  {code:"zh-Hans",label:"简体中文"},
+  {code:"zh-Hant",label:"繁體中文"},
+  {code:"en-US",label:"English"},
+  {code:"ja",label:"日本語"},
+  {code:"ko",label:"한국어"},
+  {code:"de-DE",label:"Deutsch"},
+  {code:"fr-FR",label:"Français"}
+];
+
+const langBarEl = document.getElementById("langBar");
+const pageEl = document.getElementById("pageContent");
+
+langList.forEach(l=>{
+  const btn = document.createElement("button");
+  btn.className = "lang-btn";
+  btn.dataset.lang = l.code;
+  btn.textContent = l.label;
+  btn.onclick = ()=>setLang(l.code);
+  langBarEl.appendChild(btn);
+});
+
+function setLang(code){
+  const t = i18n[code] ?? i18n["en-US"];
+  document.title = t.title + " | LumoConvert";
+  document.documentElement.lang = code;
+  pageEl.innerHTML = `<h1>${t.title}</h1><div class="effective-date">${t.effective}</div>${t.content}`;
+  document.querySelectorAll(".lang-btn").forEach(b=>{
+    b.classList.toggle("active", b.dataset.lang === code);
+  });
+  localStorage.setItem("privacy_lang",code);
+}
+
+// auto‑detect
+(function(){
+  const saved = localStorage.getItem("privacy_lang");
+  if(saved && i18n[saved]){
+    setLang(saved);
+    return;
+  }
+  const brLang = navigator.language || navigator.userLanguage;
+  let match = "en-US";
+  if(brLang.startsWith("zh-CN")) match="zh-Hans";
+  else if(brLang.startsWith("zh-TW")||brLang.startsWith("zh-HK")) match="zh-Hant";
+  else if(brLang.startsWith("ja")) match="ja";
+  else if(brLang.startsWith("ko")) match="ko";
+  else if(brLang.startsWith("de")) match="de-DE";
+  else if(brLang.startsWith("fr")) match="fr-FR";
+  setLang(match);
+})();
+</script>
+</body>
+</html>
